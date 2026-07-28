@@ -1,0 +1,212 @@
+.rpk-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.rpk-karma {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  background: rgba(127,127,127,0.12);
+  color: inherit;
+}
+
+.rpk-karma.positive {
+  background: rgba(46, 204, 113, 0.16);
+  color: #2ecc71;
+}
+
+.rpk-karma.negative {
+  background: rgba(231, 76, 60, 0.16);
+  color: #e74c3c;
+}
+
+.rpk-vote-btn,
+.rpk-plus-btn,
+.rpk-tag-chip,
+.rpk-tag-remove,
+.rpk-mini-btn,
+.rpk-save-btn,
+.rpk-cancel-btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.rpk-vote-btn,
+.rpk-plus-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(127,127,127,0.12);
+  color: inherit;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.rpk-vote-btn:hover,
+.rpk-plus-btn:hover,
+.rpk-mini-btn:hover,
+.rpk-save-btn:hover,
+.rpk-cancel-btn:hover,
+.rpk-tag-remove:hover {
+  filter: brightness(1.08);
+}
+
+.rpk-vote-btn.active-up {
+  background: rgba(46, 204, 113, 0.18);
+  color: #2ecc71;
+}
+.rpk-vote-btn.active-down {
+  background: rgba(231, 76, 60, 0.18);
+  color: #e74c3c;
+}
+
+.rpk-tags {
+  display: inline-flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rpk-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(127,127,127,0.12);
+  color: inherit;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.rpk-tag-remove {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: transparent;
+  padding: 0;
+  opacity: 0.8;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.rpk-panel {
+  position: fixed;
+  z-index: 2147483647;
+  min-width: 240px;
+  max-width: 280px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.rpk-panel h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.rpk-panel select,
+.rpk-panel input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #1b1b1b;
+  color: #fff;
+  padding: 8px 10px;
+  font: inherit;
+  margin-bottom: 8px;
+}
+
+.rpk-panel-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.rpk-save-btn,
+.rpk-cancel-btn,
+.rpk-mini-btn {
+  border-radius: 10px;
+  padding: 7px 10px;
+  color: #fff;
+}
+
+.rpk-save-btn {
+  background: #4f8cff;
+}
+.rpk-cancel-btn {
+  background: rgba(255,255,255,0.12);
+}
+.rpk-mini-btn {
+  background: rgba(127,127,127,0.12);
+  padding: 6px 8px;
+}
+
+.rpk-hidden {
+  display: none !important;
+}
+
+.rpk-inline-note {
+  display: block;
+  opacity: 0.8;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.rpk-user-card {
+  border: 1px solid rgba(127,127,127,0.2);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: rgba(127,127,127,0.05);
+}
+
+.rpk-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rpk-user-name {
+  font-weight: 700;
+}
+
+.rpk-muted {
+  opacity: 0.75;
+}
+
+.rpk-history {
+  margin-top: 10px;
+  padding-left: 18px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.rpk-history li {
+  margin-bottom: 8px;
+}
+
+.rpk-history a {
+  word-break: break-all;
+}

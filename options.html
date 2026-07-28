@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reddit Private Karma & Tags</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <h1>Reddit Private Karma & Tags</h1>
+        <p>Private vote tracking and user tags stored locally in your browser.</p>
+      </div>
+      <div class="hero-actions">
+        <button id="exportBtn" class="btn secondary">Export JSON</button>
+        <label class="btn secondary file-btn">
+          Import JSON
+          <input id="importFile" type="file" accept="application/json" hidden />
+        </label>
+        <button id="clearAllBtn" class="btn danger">Clear all data</button>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Stats</h2>
+      <div id="stats" class="stats"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Users</h2>
+        <input id="search" type="search" placeholder="Search users or tags" />
+      </div>
+      <div id="users"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Global tags</h2>
+        <p class="muted">Rename or remove tags across all users.</p>
+      </div>
+      <div id="tags"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Vote history</h2>
+        <p class="muted">Each action stores a link to the comment.</p>
+      </div>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

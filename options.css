@@ -1,0 +1,237 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0d12;
+  --panel: #12161f;
+  --muted: #97a1b3;
+  --border: rgba(255,255,255,0.08);
+  --text: #eef2ff;
+  --accent: #4f8cff;
+  --danger: #ef5350;
+  --chip: rgba(127,127,127,0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0b0d12 0%, #101521 100%);
+  color: var(--text);
+  font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  margin-bottom: 18px;
+}
+
+.hero h1 { margin: 0 0 6px; font-size: 28px; }
+.hero p { margin: 0; color: var(--muted); }
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  margin-bottom: 18px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.secondary { background: rgba(255,255,255,0.10); }
+.btn.danger { background: var(--danger); }
+
+.file-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="search"], input[type="text"], select {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  padding: 10px 12px;
+  font: inherit;
+}
+
+input[type="search"] {
+  min-width: min(100%, 360px);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.stat {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+}
+
+.stat .label {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.stat .value {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.user-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: rgba(255,255,255,0.02);
+}
+
+.user-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.karma {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--chip);
+  font-weight: 700;
+}
+
+.karma.positive { color: #2ecc71; }
+.karma.negative { color: #ff6b6b; }
+
+.tag-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--chip);
+}
+
+.tag-chip button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.row input { min-width: 220px; }
+
+.history {
+  margin-top: 12px;
+  padding-left: 18px;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.history li {
+  margin-bottom: 10px;
+}
+
+.history a {
+  color: #9ac2ff;
+  word-break: break-all;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.small-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.10);
+  color: white;
+  cursor: pointer;
+}
+.small-btn.danger { background: var(--danger); }
+.small-btn.primary { background: var(--accent); }
+
+.empty {
+  color: var(--muted);
+  padding: 18px 0;
+}

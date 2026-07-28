@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Private Karma & Tags",
+  "version": "1.0.0",
+  "description": "Private per-user karma and tag system inside Reddit comment threads.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.reddit.com/*",
+    "https://old.reddit.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Open Reddit Private Karma settings"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/*",
+        "https://old.reddit.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
