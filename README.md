@@ -13,10 +13,21 @@ A local-only Reddit helper that adds:
 - Each vote stores a comment link in history.
 - The options page lets you edit user tags, remove users, rename/delete tags, and export/import data.
 
-## Install in Opera
+## Install 
 
 1. Clone this repository to a folder
-2. Open `opera://extensions`
+2. Open the extensions manager
 3. Enable Developer mode
 4. Click `Load unpacked`
 5. Select this folder
+
+Tested in Chrome and Opera.
+
+## Notes
+
+If you install it, refresh Reddit and nothing happens, it may be due to:
+
+- DOM hydration
+- Several other extensions are still loading
+
+Give it a minute and refresh the page again.
