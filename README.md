@@ -15,11 +15,8 @@ A local-only Reddit helper that adds:
 
 ## Install in Opera
 
-1. Open `opera://extensions`
-2. Enable Developer mode
-3. Click `Load unpacked`
-4. Select this folder
-
-## Notes
-
-Reddit's DOM changes often. This extension uses best-effort selectors, so some page updates may require selector adjustments.
+1. Clone this repository to a folder
+2. Open `opera://extensions`
+3. Enable Developer mode
+4. Click `Load unpacked`
+5. Select this folder
